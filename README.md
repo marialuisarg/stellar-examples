@@ -1,4 +1,3 @@
-```
 # Trabalho Prático - Sistemas Distribuídos (DCC064 - 2025/1 UFJF)
 
 Desenvolvido por:
@@ -15,7 +14,7 @@ Os códigos demonstram como gerar chaves, financiar contas, verificar saldo, env
 
 ---
 
-## 📂 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 
@@ -30,7 +29,7 @@ stellar-examples/
 
 ---
 
-## 🚀 Pré-requisitos
+## Pré-requisitos
 
 - **Python 3.8+** instalado.
 - **Bibliotecas** necessárias:
@@ -40,9 +39,9 @@ pip install stellar-sdk requests
 
 ---
 
-## 📜 Exemplos de Uso
+## Exemplos de Uso
 
-### 1️⃣ Gerar par de chaves e financiar conta
+### Gerar par de chaves e financiar conta
 
 ```bash
 python 01_generate_keypair.py
@@ -58,7 +57,7 @@ Conta financiada com sucesso!
 
 ---
 
-### 2️⃣ Consultar saldo de uma conta
+### Consultar saldo de uma conta
 
 Edite `02_check_balance.py` e substitua `public_key` pela sua chave pública.
 
@@ -75,7 +74,7 @@ Tipo: native - Quantidade: 10000.0000000
 
 ---
 
-### 3️⃣ Enviar pagamento
+### Enviar pagamento
 
 Edite `03_send_payment.py` e substitua:
 
@@ -95,7 +94,7 @@ Transação enviada!
 
 ---
 
-### 4️⃣ Consultar transação
+### Consultar transação
 
 Edite `04_check_transaction.py` e substitua `transaction_id` pelo hash da transação.
 
@@ -112,10 +111,9 @@ Detalhes da transação:
 
 ---
 
-## 📚 Referências
+## Referências
 
 * [Documentação Oficial Stellar](https://developers.stellar.org/)
 * [Stellar SDK para Python](https://github.com/StellarCN/py-stellar-base)
 * [Horizon API — Testnet](https://horizon-testnet.stellar.org)
 * [Stellar Laboratory](https://laboratory.stellar.org/)
-```
