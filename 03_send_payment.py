@@ -1,8 +1,8 @@
-from stellar_sdk import Keypair, Network, Server, TransactionBuilder
+from stellar_sdk import Keypair, Network, Server, TransactionBuilder, Asset
 
 # Chaves das contas
-secret_key_sender = "S...CHAVE_PRIVADA_REMETENTE..."
-public_key_receiver = "G...CHAVE_PUBLICA_DESTINO..."
+secret_key_sender = ""
+public_key_receiver = ""
 
 server = Server("https://horizon-testnet.stellar.org")
 source_keypair = Keypair.from_secret(secret_key_sender)
@@ -18,8 +18,8 @@ transaction = (
     .add_text_memo("Pagamento de teste")
     .append_payment_op(
         destination=public_key_receiver,
-        amount="10",  # Quantidade em Lumens
-        asset_code="XLM"
+        amount="10",            # Quantidade
+        asset=Asset.native()    # Lumens (XLM)
     )
     .set_timeout(30)
     .build()

@@ -1,6 +1,6 @@
 from stellar_sdk import Server
 
-public_key = "G...SUA_CHAVE_AQUI..."
+public_key = ""
 server = Server("https://horizon-testnet.stellar.org")
 
 account = server.accounts().account_id(public_key).call()
